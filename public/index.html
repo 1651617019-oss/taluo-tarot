@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>塔罗占卜 - 命运之轮</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🃏</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>✦ 命运之轮 ✦</h1>
+  <p>聆听内心之声 · 探寻命运之谜</p>
+</header>
+
+<div class="container">
+
+  <!-- 玩法引导弹窗 -->
+  <div class="guide-overlay" id="guide-overlay">
+    <div class="guide-modal">
+      <h2>🃏 玩法说明</h2>
+      <p class="guide-sub">只需三步，开启你的塔罗之旅</p>
+      <div class="guide-item">
+        <div class="gi-icon">1</div>
+        <div class="gi-text">
+          <h4>选择牌阵</h4>
+          <p>单张牌快速占卜 · 三张牌看过去现在未来 · 凯尔特十字深层解读</p>
+        </div>
+      </div>
+      <div class="guide-item">
+        <div class="gi-icon">2</div>
+        <div class="gi-text">
+          <h4>抽取命运之牌</h4>
+          <p>点击抽牌按钮，卡牌会依次翻转展示，每次结果都不相同</p>
+        </div>
+      </div>
+      <div class="guide-item">
+        <div class="gi-icon">3</div>
+        <div class="gi-text">
+          <h4>阅读解牌释义</h4>
+          <p>每张牌都有正/逆位含义和详细解读，帮助理解命运的指引</p>
+        </div>
+      </div>
+      <button class="guide-btn" id="guide-btn">✨ 开始占卜</button>
+    </div>
+  </div>
+
+  <!-- 牌阵选择 -->
+  <div class="spread-selector">
+    <button class="spread-btn active" data-spread="single">🔮 单张 · 快速占卜</button>
+    <button class="spread-btn" data-spread="three">🔮 三张 · 过去现在未来</button>
+    <button class="spread-btn" data-spread="cross">🔮 凯尔特十字 · 深层解读</button>
+  </div>
+
+  <!-- 抽卡按钮 -->
+  <div class="draw-area">
+    <button class="draw-btn" id="draw-btn">🔮 抽取命运之牌</button>
+  </div>
+
+  <!-- 卡牌展示区（空状态提示） -->
+  <div class="cards-area" id="cards-area">
+    <div class="empty-hint">
+      <div class="eh-icon">🃏</div>
+      <h3>选择牌阵，开始占卜</h3>
+      <p>选择上方的牌阵类型后，点击"抽取命运之牌"<br>塔罗牌将为你揭示命运的线索</p>
+    </div>
+  </div>
+
+  <!-- 解读区 -->
+  <div class="interpretation-area" id="interpretation-area">
+    <div class="interpretation-box" id="interpretation-content"></div>
+  </div>
+
+  <!-- 历史记录 -->
+  <div class="history-section">
+    <h2>✦ 占卜记录 ✦</h2>
+    <div class="history-list" id="history-list">
+      <div class="no-history">暂无占卜记录，抽卡后将自动保存</div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/tarot-data.js"></script>
+<script src="js/card-art.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
