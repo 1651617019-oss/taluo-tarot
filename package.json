@@ -1,0 +1,13 @@
+{
+  "name": "taluo-tarot",
+  "version": "1.0.0",
+  "description": "塔罗牌抽卡解牌网页游戏",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "dependencies": {
+    "express": "^4.22.2"
+  }
+}
