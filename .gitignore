@@ -1,0 +1,6 @@
+﻿# 忽略文件
+node_modules/
+outputs/
+package-lock.json
+.DS_Store
+Thumbs.db
